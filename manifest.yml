@@ -1,0 +1,11 @@
+---
+name: CST Studio
+category: Interactive Apps
+subcategory: GUIs
+role: batch_connect
+description: |
+  This app will launch a [CST Studio] GUI on the [Katana cluster]. You will be able
+  to interact with the CST Studio GUI through a VNC session.
+
+  [CST Studio]: https://www.3ds.com/products-services/simulia/products/cst-studio-suite/
+  [Katana cluster]: https://unsw-restech.github.io/

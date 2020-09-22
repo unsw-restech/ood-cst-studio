@@ -1,0 +1,33 @@
+---
+cluster: "katana"
+form:
+  - version
+  - bc_account
+  - bc_num_hours
+  - bc_num_slots
+  - num_cores
+  - bc_vnc_resolution
+  - bc_email_on_started
+attributes:
+  num_cores:
+    widget: "number_field"
+    label: "Number of cores"
+    value: 1
+    help: |
+      Number of cores on node type (4 GB per core).
+    min: 0
+    max: 48
+    step: 1
+    id: 'num_cores'
+  bc_num_slots: "1"
+  bc_vnc_resolution:
+    required: true
+  bc_account:
+    label: "Project"
+    help: "You can leave this blank if **not** in multiple projects."
+  version:
+    widget: select
+    label: "CST version"
+    help: "This defines the version of CST Studio you want to load."
+    options:
+        - [ "2020sp6", "cst/2020sp6-cstelec" ]
